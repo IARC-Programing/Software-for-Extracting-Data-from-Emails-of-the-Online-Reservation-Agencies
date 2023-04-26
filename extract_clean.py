@@ -1,8 +1,8 @@
 import re
-from dateutil import parser
-import json
-import codecs
-from bs4 import BeautifulSoup
+# from dateutil import parser
+# import json
+# import codecs
+# from bs4 import BeautifulSoup
 
 
 def clean(text):
