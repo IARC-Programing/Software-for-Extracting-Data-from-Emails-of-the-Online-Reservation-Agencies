@@ -22,3 +22,5 @@ python -m venv venv
 ```
 pip install -r requirement.txt
 ```
+
+- Create `credentails.json` file like in `credential.example.json` and get them from Google Cloud Platform
