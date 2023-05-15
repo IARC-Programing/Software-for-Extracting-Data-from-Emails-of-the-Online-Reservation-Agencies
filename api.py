@@ -34,7 +34,8 @@ def create_json(numberOfRoom, start, end, type_code, firstname, lastname, tel, e
         "numberOfRoom": numberOfRoom,
         "start": start,
         "end": end,
-        "type_code": "STD",
+        "type_code": type_code,
+        "ota_booking_id": booking_id,
         "customer": {
             "firstname": firstname,
             "lastname": lastname,
@@ -54,7 +55,11 @@ def create_json(numberOfRoom, start, end, type_code, firstname, lastname, tel, e
             "paid_amount": paid_amount,
             "ota_payment_status": ota_payment_status,
             "discount_amount": 0,
-            "paid_type": ""
+            "paid_type": "ONLINE_SYSTEM"
+        },
+        "capacity": {
+            "adult": adult_amount,
+            "child": kid_amount
         }
     }
 
@@ -69,16 +74,12 @@ def post_data(data, msg_id):
     # Convert the JSON object to a string
     json_data = json.dumps(data)
 
-    # Define the Bearer token
-    token = API_KEY
-
     # Send the JSON data to a website using the HTTP POST method with the Authorization header
-    url = API_URL
     headers = {
         'Content-Type': 'application/json',
-        'Authorization': f'Bearer {token}'
+        'Authorization': f'Bearer {API_KEY}'
     }
-    response = requests.post(url, data=json_data, headers=headers)
+    response = requests.post(API_URL, data=json_data, headers=headers)
 
     # Print the response from the website
     print(response.text)
@@ -99,7 +100,7 @@ def delete_data(booking_id):
     # Define the Bearer token
     token = API_KEY
 
-    url = f'{API_URL})ota/868677217'
+    url = f'{API_URL})ota/{booking_id}'
     headers = {
         'Content-Type': 'application/json',
         'Authorization': f'Bearer {token}'

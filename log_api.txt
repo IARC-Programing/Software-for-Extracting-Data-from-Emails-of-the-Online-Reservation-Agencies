@@ -1,2 +1,38 @@
 msg_id 1881e72283b43b42 \ 2023-05-15 15:30:00.025075 : {"error":{"status":400,"message":"Booking validation failed: start: Cast to date failed for value \"2023-17-03\" at path \"start\", end: Cast to date failed for value \"2023-22-03\" at path \"end\""}}
 
+msg_id 1881ea4c7f62de24 \ 2023-05-15 18:36:12.607385 : {"error":{"status":500}}
+
+msg_id 1881e72283b43b42 \ 2023-05-15 18:36:13.396391 : {"error":{"status":500}}
+
+msg_id 1881ea4c7f62de24 \ 2023-05-15 18:36:29.861098 : {"error":{"status":500,"message":"Booking is already store"}}
+
+msg_id 1881e72283b43b42 \ 2023-05-15 18:36:30.372980 : {"error":{"status":500,"message":"Booking is already store"}}
+
+msg_id 1881ea4c7f62de24 \ 2023-05-15 18:36:46.794295 : {"error":{"status":500,"message":"Booking is already store"}}
+
+msg_id 1881e72283b43b42 \ 2023-05-15 18:36:47.138084 : {"error":{"status":500,"message":"Booking is already store"}}
+
+msg_id 1881ea4c7f62de24 \ 2023-05-15 18:37:03.566610 : {"error":{"status":500,"message":"Booking is already store"}}
+
+msg_id 1881e72283b43b42 \ 2023-05-15 18:37:03.972554 : {"error":{"status":500,"message":"Booking is already store"}}
+
+msg_id 1881ea4c7f62de24 \ 2023-05-15 18:37:20.445607 : {"error":{"status":500,"message":"Booking is already store"}}
+
+msg_id 1881e72283b43b42 \ 2023-05-15 18:37:20.793675 : {"error":{"status":500,"message":"Booking is already store"}}
+
+msg_id 1881ea4c7f62de24 \ 2023-05-15 18:37:37.644855 : {"error":{"status":500,"message":"Booking is already store"}}
+
+msg_id 1881e72283b43b42 \ 2023-05-15 18:37:37.988779 : {"error":{"status":500,"message":"Booking is already store"}}
+
+msg_id 1881ea4c7f62de24 \ 2023-05-15 18:37:54.993582 : {"error":{"status":500,"message":"Booking is already store"}}
+
+msg_id 1881e72283b43b42 \ 2023-05-15 18:37:55.338852 : {"error":{"status":500,"message":"Booking is already store"}}
+
+msg_id 1881ea4c7f62de24 \ 2023-05-15 18:38:12.142794 : {"error":{"status":500,"message":"Booking is already store"}}
+
+msg_id 1881e72283b43b42 \ 2023-05-15 18:38:12.482479 : {"error":{"status":500,"message":"Booking is already store"}}
+
+msg_id 1881ea4c7f62de24 \ 2023-05-15 18:38:28.924455 : {"error":{"status":500,"message":"Booking is already store"}}
+
+msg_id 1881e72283b43b42 \ 2023-05-15 18:38:29.268579 : {"error":{"status":500,"message":"Booking is already store"}}
+
