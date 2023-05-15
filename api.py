@@ -12,23 +12,7 @@ API_KEY = config('TOKEN')
 
 
 def create_json(numberOfRoom, start, end, type_code, firstname, lastname, tel, email, booking_id, booking_date, ota_name, promotion, breakfast, adult_amount, kid_amount, paid_amount, ota_payment_status):
-    # print_data("ota_name", ota_name)
-    # print_data("booking_id", booking_id)
-    # print_data("email", email)
-    # print_data("tel", tel)
-    # print_data("adult_amount", adult_amount)
-    # print_data("kid_amount", kid_amount)
-    # print_data("firstname", firstname)
-    # print_data("lastname", lastname)
-    # print_data("start", start)
-    # print_data("end", end)
-    # print_data("numberOfRoom", numberOfRoom)
-    # print_data("type_code", type_code)
-    # print_data("paid_amount", paid_amount)
-    # print_data("ota_payment_status", ota_payment_status)
-    # print_data("promotion", promotion)
-    # print_data("breakfast", breakfast)
-    # print_data("booking_date", booking_date)
+
     data = {
         "outerServiceBooking": True,
         "numberOfRoom": numberOfRoom,
