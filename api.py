@@ -5,6 +5,10 @@ import os.path
 import os
 from datetime import datetime
 from extract_clean import *
+from decouple import config
+
+API_URL = config('E_ACCOM_API_URL')
+API_KEY = config('TOKEN')
 
 
 def create_json(numberOfRoom, start, end, type_code, firstname, lastname, tel, email, booking_id, booking_date, ota_name, promotion, breakfast, adult_amount, kid_amount, paid_amount, ota_payment_status):
@@ -66,10 +70,10 @@ def post_data(data, msg_id):
     json_data = json.dumps(data)
 
     # Define the Bearer token
-    token = "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjYyOGI1NGFjOTgyZDgwMDAxMzg0YzI3OCIsInVzZXJuYW1lIjoiYWRtaW4iLCJleHAiOjE2ODQzOTk2NzEsImlhdCI6MTY3NjYyMzY3MX0.8VyGyYLlm095K-6sTdWLLcT93yKiDz2PMKPHUEcp-18"
+    token = API_KEY
 
     # Send the JSON data to a website using the HTTP POST method with the Authorization header
-    url = 'https://demo.eaccom.net/api/v1/booking'
+    url = API_URL
     headers = {
         'Content-Type': 'application/json',
         'Authorization': f'Bearer {token}'
@@ -93,9 +97,9 @@ def post_data(data, msg_id):
 def delete_data(booking_id):
 
     # Define the Bearer token
-    token = "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjYyOGI1NGFjOTgyZDgwMDAxMzg0YzI3OCIsInVzZXJuYW1lIjoiYWRtaW4iLCJleHAiOjE2ODQzOTk2NzEsImlhdCI6MTY3NjYyMzY3MX0.8VyGyYLlm095K-6sTdWLLcT93yKiDz2PMKPHUEcp-18"
+    token = API_KEY
 
-    url = f'https://demo.eaccom.net/api/v1/booking/ota/868677217'
+    url = f'{API_URL})ota/868677217'
     headers = {
         'Content-Type': 'application/json',
         'Authorization': f'Bearer {token}'

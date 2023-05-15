@@ -38,6 +38,7 @@ def main():
     # If there are no (valid) credentials available, let the user log in.
     if not creds or not creds.valid:
         if creds and creds.expired and creds.refresh_token:
+            print('Credential Expire')
             creds.refresh(Request())
         else:
             flow = InstalledAppFlow.from_client_secrets_file(
@@ -152,10 +153,10 @@ def parse_parts(service, parts, message, subject, ota_name, msg_id):
 
 
 if __name__ == '__main__':
-    print("-"*80)
-    main()
-    time.sleep(2)
-    # while True:
-    #     main()
-    #     print("sleep")
-    #     time.sleep(12)
+    # print("-"*80)
+    # main()
+    # time.sleep(2)
+    while True:
+        main()
+        print("sleep")
+        time.sleep(12)

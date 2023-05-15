@@ -76,7 +76,7 @@ def format_date(text):
     if match:
         text = match.group(0)
     date = parser.parse(text)
-    return date.strftime("%d-%m-%Y")
+    return date.strftime("%Y-%m-%d")
 
 
 def short_room_type(argument):
